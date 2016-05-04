@@ -946,3 +946,4 @@ The xstyle project follows the IP guidelines of Dojo foundation packages and all
 If you feel compelled to make a monetary contribution, consider some of the author's [favorite
 charities](http://thezyps.com/2012-giving-guide/) like [Innovations for Poverty Action](http://www.poverty-action.org/) or
 the [UNFPA](http://www.friendsofunfpa.org/).
+
