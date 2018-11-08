@@ -205,6 +205,15 @@ define('xstyle/core/parser', [], function(){
 								if(assignmentOperator == ':' && assignment){
 									first += assignment;
 								}
+								
+								// AR: fix
+								// https://github.com/kriszyp/xstyle/issues/61
+								// now selectors like ".A:not(.B) .C" works
+								// before it was wrongly changed to ".A:not(.B).C"
+								if(first && whitespace){
+									first = whitespace + first;
+								}
+								// AR: fix end
 								selector = trim((selector + first).replace(/\s+/g, ' '));
 								// check to see if it is a correlator rule, from the build process
 								// add this new rule to the current parent rule
